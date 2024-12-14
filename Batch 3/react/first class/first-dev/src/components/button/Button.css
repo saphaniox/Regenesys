@@ -1,0 +1,14 @@
+button {
+  height: 45px;
+  width: 150px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-family: poppins;
+  font-weight: 800;
+}
+
+button:hover {
+  background-color: darkorange;
+  color: white;
+}

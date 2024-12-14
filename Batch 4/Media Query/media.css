@@ -1,0 +1,42 @@
+h1{
+background-color: red;
+font-size: 60px
+}
+
+h2{
+font-size: 60px;
+background-color: blue
+}
+
+
+.mobileView{
+display: none;
+font-size: 60px;
+}
+
+@media (max-width: 768px){
+.mobileView{
+display: block
+}
+}
+
+
+
+@media only screen and (max-width: 800px){
+	h1{
+	background-color: orange
+	}
+
+	body{
+	background-color: skyblue
+	}
+}
+
+
+
+
+@media (min-width: 800px){
+h2{
+background-color: grey
+}
+}

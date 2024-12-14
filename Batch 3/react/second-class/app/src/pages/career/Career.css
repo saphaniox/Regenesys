@@ -1,0 +1,24 @@
+.CareerContaine {
+  display: flex;
+  justify-content: center;
+  font-family: poppins;
+}
+input {
+  height: 40px;
+  width: 300px;
+  font-family: poppins;
+}
+
+.CareerCard {
+  height: 200px;
+  width: 300px;
+  background-color: darksalmon;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+}
+
+.cardHolder {
+  display: flex;
+  flex-wrap: wrap;
+}

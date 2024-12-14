@@ -1,0 +1,70 @@
+h1{
+background-color: red
+}
+
+h1:hover{
+background-color: blue;
+color: white;
+height: 100px
+}
+
+header{
+height: 70px;
+background-color: lightblue
+}
+
+.logoBox{
+font-size: 40px;
+font-family: jokerman;
+margin-right: 100px;
+margin-left: 50px
+}
+
+.navagation{
+margin-right: 20px;
+font-size: 20px
+
+}
+
+.navagation:hover{
+color: red
+}
+
+.myButton{
+margin-left: 50px
+}
+
+.myButton:hover{
+background-color: blue;
+color: white;
+}
+
+
+input:focus{
+	outline: 3px solid orange
+}
+
+
+
+a:active{
+color: red
+}
+
+h2{
+color: green
+}
+
+h2::before{
+content: "Mr ";
+color: red
+}
+
+
+h2::after{
+content: " Goodbye";
+color: yellow
+}
+
+
+
+

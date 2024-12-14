@@ -1,0 +1,56 @@
+.childern{
+height: 100px;
+width: 100px;
+background-color: aqua;
+margin: 20px;
+}
+
+.container{
+background-color: green;
+display: flex;
+flex-direction: row-reverse
+}
+
+.childern2{
+height: 100px;
+width: 100px;
+background-color: aqua;
+margin: 20px;
+}
+
+.container2{
+background-color: green;
+display: flex;
+justify-content: space-evenly;
+}
+
+.childern3{
+height: 100px;
+width: 100px;
+background-color: aqua;
+margin: 20px;
+}
+
+.container3{
+background-color: green;
+height: 500px;
+display: flex;
+align-items: center
+}
+
+
+.childern4{
+height: 100px;
+width: 100px;
+background-color: aqua;
+margin: 20px;
+}
+
+.container4{
+background-color: green;
+width: 1000px;
+display: flex;
+flex-wrap: wrap;
+}
+
+

@@ -1,0 +1,42 @@
+body{
+margin: 0
+}
+
+
+.generalContainer{
+background-color: indigo;
+height: 100vh;
+background-image: url("./bg-desktop.svg")
+}
+
+.headerContainer{
+padding: 30px
+}
+
+
+.imageText{
+display:flex;
+padding: 30px;
+color: white;
+justify-content: space-between;
+}
+
+.textContainer{
+width: 600px
+}
+
+h1{
+font-size: 50px
+}
+
+button{
+height: 40px;
+width: 200px;
+border-radius: 30px;
+border: none
+}
+
+button:hover{
+background-color: hotpink;
+color: white
+}

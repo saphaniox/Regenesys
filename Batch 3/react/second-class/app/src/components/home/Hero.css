@@ -1,0 +1,20 @@
+.heroContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.heroTextContainer {
+  width: 500px;
+  h1 {
+    font-size: 60px;
+    margin: 0;
+    line-height: normal;
+  }
+}
+
+.heroImagContainer {
+  img {
+    width: 500px;
+  }
+}
