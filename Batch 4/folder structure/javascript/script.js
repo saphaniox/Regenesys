@@ -149,9 +149,15 @@ console.log("Hello Everyone");
 // Classwork
 //Write a program that tells the user the hightst of two numbers
 
-const numOne = 78;
-const numTwo = 45;
+// const numOne = 78;
+// const numTwo = 45;
 
-if (numOne > numTwo) {
-  console.log("The first number is the greaest");
-} else console.log("The second Number is the Greatest");
+// if (numOne > numTwo) {
+//   console.log("The first number is the greaest");
+// } else console.log("The second Number is the Greatest");
+
+const functionAdd = (a, b) => {
+  console.log(a + b);
+};
+
+functionAdd(2, 4);

@@ -34,6 +34,7 @@ const Career = () => {
   console.log("From state", cardData);
   return (
     <div className="CareerContaine">
+      <button>Subtract 5 from state value</button>
       <section>
         <h1>Tell Us About Your Career</h1>
         <form onSubmit={postData}>
