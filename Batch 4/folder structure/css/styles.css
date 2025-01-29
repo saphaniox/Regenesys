@@ -2,7 +2,42 @@
   background-color: firebrick;
 } */
 
-button {
+/* button {
   padding: 10px 20px;
   background-color: cyan;
+} */
+
+
+.ball{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce{
+  0%, 100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-100px);
+  }
+}
+
+.hoverButton{
+  padding: 10px 20px;
+  background-color: darkcyan;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 5s ease, transform 1s ease;
+}
+
+.hoverButton:hover{
+  background-color: darkorange;
+  color: black;
+  transform: scale(1.1);
 }
