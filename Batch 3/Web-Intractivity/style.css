@@ -1,4 +1,4 @@
-.BigGuy{
+/* .BigGuy{
     font-size: 50px;
     color: red;
 }
@@ -31,4 +31,60 @@
 
 .highlight{
     border: 5px solid red;
+} */
+
+
+/* This is the Todo Styles */
+
+body{
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e3e3e3;
+}
+
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+input{
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: poppins;
+}
+
+button{
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: poppins;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+}
+
+li:hover{
+    background: #f8d7da;
 }

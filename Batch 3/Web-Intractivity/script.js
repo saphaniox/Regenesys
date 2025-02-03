@@ -48,10 +48,40 @@ console.log(document);
 //     box.classList.remove('highlight')
 // }
 
-const myContainer = document.getElementById('conatiner')
+// const myContainer = document.getElementById('conatiner')
 
-document.getElementById('addElement').addEventListener('click', ()=>{
-    const newDiv = document.createElement('div')
-    newDiv.textContent = 'I am a New Element'
-    myContainer.appendChild(newDiv)
+// document.getElementById('addElement').addEventListener('click', ()=>{
+//     const newDiv = document.createElement('div')
+//     newDiv.textContent = 'I am a New Element'
+//     myContainer.appendChild(newDiv)
+// })
+
+// const validateInput = document.getElementById('myInput')
+// if(validateInput.value.trim() === ""){
+//     alert('This Field Cannot Be empty')
+// }
+
+
+
+
+//Todo
+
+const list = document.getElementById('todoList')
+const input = document.getElementById('todoInput')
+const button = document.getElementById('addTodo')
+
+
+button.addEventListener('click', ()=>{
+    if(input.value.trim() !== ""){
+        const li = document.createElement('li')
+        li.textContent = input.value
+
+        list.appendChild(li)
+        input.value = ''
+        console.log(li)
+    }else{
+        alert('Please enter a TODO')
+    }
 })
+
+console.log(list)
