@@ -3,12 +3,10 @@ import TextComp from "../../components/textcomp/TextComp"
 import './Home.css'
 
 const Home = () => {
-    const myName = 'Sammy Sam'
     return(
         <div className="homeContainer">
-           <TextComp myName={myName} />
+           <TextComp />
            <ImageComp />
-          
         </div>
     )
 }
