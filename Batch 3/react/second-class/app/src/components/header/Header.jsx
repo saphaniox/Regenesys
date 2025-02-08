@@ -13,7 +13,9 @@ const Header = () => {
           <Link to="/my-feature">
             <nav>Features</nav>
           </Link>
+          <Link to='/company'>
           <nav>Company</nav>
+          </Link>
           <Link to="/careers">
             <nav>Career </nav>
           </Link>

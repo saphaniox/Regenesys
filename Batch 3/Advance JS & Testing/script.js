@@ -86,11 +86,78 @@ console.log('Hello Advance JS')
 
 //Try and Catch
 
-try{
-    let num = JSON.parse('Invalid JSON')
-    console.log('My Good Code',num)
-} catch (error){
-    console.log('An Error Occoured: my error', error)
-} finally{
-    console.log('Error handling Complect')
+// try{
+//     let num = JSON.parse('Invalid JSON')
+//     console.log('My Good Code',num)
+// } catch (error){
+//     console.log('An Error Occoured: my error', error)
+// } finally{
+//     console.log('Error handling Complect')
+// }
+
+// console.log('I ame the first Guy')
+// console.log('I ame the second Guy')
+// console.log('I ame the third Guy')
+
+
+// console.log('I am the first guy')
+
+// setTimeout(()=>{
+//     console.log('I am the second guy')
+// }, 2000)
+
+// console.log('I am the third Guy')
+
+
+// function fetchData(callback){
+//     setTimeout(()=>{
+//         console.log('Data has been fetched')
+//         callback()
+//     }, 2000)
+// }
+
+// fetchData(()=>{
+//     console.log('Data is being Processed...')
+//     setTimeout(()=>{
+//         console.log('Data is being displayed...')
+//     }, 1000)
+// })
+
+// const myPromise = new Promise((resolved, reject)=>{
+//     let success = false
+//     setTimeout(()=>{
+//         if(success){
+//             resolved('Promise resolved')
+//         }else{
+//             reject('Promise Rejected')
+//         }
+//     },2000)
+// })
+
+// myPromise.then((result)=>{return console.log(result)})
+// myPromise.catch((error)=>{return console.log(error)})
+
+// const fetchData = async ()=>{
+//    try {
+//     let response = await fetch('https://jsonplaceholder.typicode.com/posts')
+//     let data = await response.json()
+//     console.log(data)
+//    } catch (error) {
+//     console.log('Error fetching Data', error)
+//    }
+// }
+
+// fetchData()
+
+
+const fetchData = async () =>{
+try {
+   let response = await fetch('https://jsonplaceholder.typicode.com/users')
+   let  data = await response.json()
+   console.log(data)
+} catch (error) {
+   console.log('Error Getting Data', error)
 }
+}
+
+fetchData()

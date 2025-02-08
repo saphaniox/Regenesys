@@ -6,6 +6,7 @@ import Features from "./pages/features/Features";
 import Career from "./pages/career/Career";
 import { Provider } from "react-redux";
 import { myStore } from "./services/store";
+import Company from "./pages/company/Company";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/my-feature" element={<Features />} />
             <Route path="/careers" element={<Career />} />
+            <Route path="/company" element={ <Company />}/>
           </Routes>
         </Provider>
       </BrowserRouter>
