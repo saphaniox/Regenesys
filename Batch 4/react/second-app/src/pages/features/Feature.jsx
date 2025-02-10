@@ -7,7 +7,7 @@ const Feature = () => {
   const [login, setLogin] = useState(false)
   
 
-  const a = 22
+  // const a = 22
   const increaseCounter = () =>{
    setCounter(counter + 2)
   }

@@ -69,7 +69,7 @@ const About = () => {
        {getData.map((userData, i)=>(
          <tr key={i}>
          <td> {userData.id} </td>
-         <td> {userData.name} </td>
+         <td> {userData?.name} </td>
          <td> {userData.username} </td>
          <td> {userData.email} </td>
          <td> {userData.address.street} </td>
