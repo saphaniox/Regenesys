@@ -8,6 +8,7 @@
 form{
     display: flex;
     flex-direction: column;
+    
 
     input{
         height: 40px;
@@ -33,4 +34,5 @@ form{
 
 .cardHolder{
     display: flex;
+    flex-wrap: wrap;
 }

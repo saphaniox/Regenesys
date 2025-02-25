@@ -1,4 +1,38 @@
 .companyContainer{
-    background-color: darkred;
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    
+
+    input{
+        height: 40px;
+        width: 300px;
+        font-family: poppins;
+        margin: 10px 0;
+    }
+    textarea{
+        margin: 10px 0;
+    }
+    button{
+        height: 40px;
+        width: 300px;
+    }
+}
+
+.card{
+    height: 200px;
+    width: 300px;
+    background-color: gold;
+    margin: 10px;
+}
+
+.cardHolder{
+    display: flex;
+    flex-wrap: wrap;
 }

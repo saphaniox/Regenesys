@@ -285,7 +285,6 @@ console.log("Hello Everyone");
 
 // Write a loop that prints out the only the even numbers of the 2times multiplication table from 2 to 60 e.g 2x2=4, 2x4=8, 2x6=12
 
-
 // console.log('hello')
 
 // for(let i=1; i<=12; i++){
@@ -319,16 +318,16 @@ console.log("Hello Everyone");
 // Other Array Methods
 
 //For Each
-const names = ['John', 'Jane', 'Jack', 'Bill', 'James', 'Jenny', 'Jasper']
+const names = ["John", "Jane", "Jack", "Bill", "James", "Jenny", "Jasper"];
 const students = [
-    {name: 'John', age: 25},
-    {name: 'Jane', age: 22},
-    {name: 'Jack', age: 23},
-    {name: 'Bill', age: 24},
-    {name: 'James', age: 26},
-    {name: 'Jenny', age: 21},
-    {name: 'Jasper', age: 27}
-]
+  { name: "John", age: 25 },
+  { name: "Jane", age: 22 },
+  { name: "Jack", age: 23 },
+  { name: "Bill", age: 24 },
+  { name: "James", age: 26 },
+  { name: "Jenny", age: 21 },
+  { name: "Jasper", age: 27 },
+];
 // console.log(names)
 // console.log(names.forEach(myName => console.log(myName)))
 // console.log(names.forEach(myName => console.log(myName)))
@@ -344,7 +343,6 @@ const students = [
 // Filter
 // console.log(students.filter((myAge)=>{return myAge.age < 23}))
 // console.log(students.filter((myAge)=>{return myAge.age > 23}))
-
 
 // const student = {
 //     name: 'John',
@@ -406,10 +404,21 @@ const students = [
 // console.log(trmplateStory)
 
 //Distructuring
-const allFruits = ['apple', 'nut', 'banana', 'mango', 'orange', 'grapes', 'pineapple', 'strawberry', 'pear', 'kiwi', 'watermelon ']
+const allFruits = [
+  "apple",
+  "nut",
+  "banana",
+  "mango",
+  "orange",
+  "grapes",
+  "pineapple",
+  "strawberry",
+  "pear",
+  "kiwi",
+  "watermelon ",
+];
 // console.log(allFruits)
 // console.log(allFruits[1])
-
 
 // const [fruit1, fruit2, ...remainingFruit] = ['apple', 'banana', 'mango', 'orange', 'grapes']
 
@@ -421,8 +430,6 @@ const allFruits = ['apple', 'nut', 'banana', 'mango', 'orange', 'grapes', 'pinea
 
 // const {age, name} = student
 // console.log(age)
-
-
 
 //DOM in Javascript
 
@@ -437,10 +444,6 @@ const allFruits = ['apple', 'nut', 'banana', 'mango', 'orange', 'grapes', 'pinea
 
 // const button = document.querySelector('.ball')
 // console.log(button)
-
-
-
-
 
 // const javaEventButton = document.getElementById('myButton')
 // console.log(javaEventButton)
@@ -457,8 +460,6 @@ const allFruits = ['apple', 'nut', 'banana', 'mango', 'orange', 'grapes', 'pinea
 //     alert('Event has been removed')
 // })
 
-
-
 // //Accessing Input Field
 // const nameInput = document.querySelector('.inputField')
 // console.log(nameInput.value)
@@ -467,28 +468,48 @@ const allFruits = ['apple', 'nut', 'banana', 'mango', 'orange', 'grapes', 'pinea
 // nameInput.addEventListener('change',(e)=>{
 //     e.preventDefault()
 //     alert(nameInput.value)
-    
+
 // })
 
+// document.getElementById('myForm').addEventListener('submit', (e)=>{
+//     e.preventDefault()
+//     const name = document.getElementById('name').value
+//     const email = document.getElementById('email').value
+//     const password = document.getElementById('password').value
+//     const confirmPassword = document.getElementById('confirmPassword').value
 
+//     if(name === '' || email === '' || password === '' || confirmPassword === ''){
+//         alert('Please Fill in all fields')
+//     }else if(password !== confirmPassword){
+//         alert('Password do not match')
+//     }else{
+//         alert('Form Submitted Successfully')
+//         document.getElementById('message').textContent = `Welcome ${name}`
+//     }
 
+// })
 
+console.log("Web Interactivity");
 
-document.getElementById('myForm').addEventListener('submit', (e)=>{
-    e.preventDefault()
-    const name = document.getElementById('name').value
-    const email = document.getElementById('email').value
-    const password = document.getElementById('password').value
-    const confirmPassword = document.getElementById('confirmPassword').value
+// document.getElementById("bait").addEventListener("click", () => {
+//   alert("Your Bait has been increased by 1");
+// });
 
-    if(name === '' || email === '' || password === '' || confirmPassword === ''){
-        alert('Please Fill in all fields')
-    }else if(password !== confirmPassword){
-        alert('Password do not match')
-    }else{
-        alert('Form Submitted Successfully')
-        document.getElementById('message').textContent = `Welcome ${name}`
-    }
+// const myhoverguy = document.querySelector(".hoverguy");
 
-    
-})
+// myhoverguy.addEventListener("mouseover", () => {
+//   myhoverguy.style.color = "red";
+// });
+
+// myhoverguy.addEventListener("mouseleave", () => {
+//   myhoverguy.style.color = "green";
+// });
+
+// const userAge = 37;
+
+// console.log("John Doe is", userAge);
+// console.log("Sandra Wells is", userAge);
+
+console.log("DOM interaction");
+
+console.log(document);
