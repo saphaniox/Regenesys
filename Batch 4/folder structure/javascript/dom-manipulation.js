@@ -24,3 +24,20 @@ function changeText() {
   const textElement = document.getElementById("text");
   textElement.innerHTML = "<b>I am the Updated Text</b>";
 }
+
+//Simple form Validation
+
+const form = document.getElementById("form");
+const nameInput = document.getElementById("name");
+const error = document.getElementById("error");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (nameInput.value.trim() === "") {
+    error.textContent = "Name block cannot be empty";
+    error.style.display = "block";
+  } else {
+    error.style.display = "none";
+    alert(`Hello, ${nameInput.value}`);
+  }
+});
