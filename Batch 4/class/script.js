@@ -1,5 +1,6 @@
 console.log("Getting Ready");
-import testName from "./library";
+// import testName from "./library";
+// import {c} from './library'
 
 class Library {
   constructor(name) {

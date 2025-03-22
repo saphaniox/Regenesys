@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const PORT = 2445;
 const jwt = require("jsonwebtoken");
+const bcrypt = require("bcrypt");
 
 app.use(express.json());
 app.get("/", (req, res) => {
@@ -51,6 +52,51 @@ app.post("/login", (req, res) => {
   // generate a token containing the user info
   const token = generateToken(user);
   res.status(200).json({ token });
+});
+
+app.post("/register", async (req, res) => {
+  const { username, password, role } = req.body;
+  const hashPassword = await bcrypt.hash(password, 10);
+  const newuser = {
+    id: users.length + 1,
+    username,
+    role,
+    password: hashPassword,
+  };
+  users.push(newuser);
+
+  const token = jwt.sign(
+    { id: newuser.id, role: newuser.role, username: newuser.username },
+    "SecretKey",
+    {
+      expiresIn: "10m",
+    }
+  );
+  res.status(201).json({
+    message: "New User Created Successfully",
+    data: token,
+  });
+});
+
+const verifyToken = (req, res, next) => {
+  const token = req.header("Autorization")?.split(" ")[1]; //Extract Token from the Header
+  if (!token) return res.status(401).send("Access Denied");
+
+  try {
+    req.user = jwt.verify(token, "SecretKey");
+    next();
+  } catch (error) {
+    req.status(400).send("Invalid Token");
+  }
+};
+
+const verifyAdmin = (req, res, next) => {
+  if (req.user.role !== "admin") return res.status(403).send("Access Denied");
+  next();
+};
+
+app.get("/admin", verifyToken, verifyAdmin, (req, res) => {
+  res.send("Welcome Admin");
 });
 
 app.listen(PORT, () => {
